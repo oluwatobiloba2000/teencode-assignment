@@ -1,7 +1,8 @@
-
 const secretUsername = 'admin';
 const secretPassword = 'admin123';
-document.querySelector(".signin").addEventListener('click' , checkValidation);
+document.querySelector(".signin").addEventListener('click' , checkValidation , {
+    once : true
+});
 
 
 function checkValidation(i){
@@ -10,12 +11,7 @@ function checkValidation(i){
     const passwordInput = document.getElementById("passwordsignup").value;
 
     if(usernameInput === '' || passwordInput === ''){
-        // const note = document.createElement('div');
-        // note.innerHTML = '<p><b>USERNAME</b> and <b>PASSWORD</b> required</p>';
-        // document.querySelector('h1').insertAdjacentElement('afterend' , note);
-        // note.classList.add('note');
-        //  console.log('null');
-        // alert("please make sure you input your username and password");
+
     }
 
     else if(usernameInput === secretUsername && passwordInput === secretPassword){
@@ -29,6 +25,7 @@ function checkValidation(i){
         errorDiv.innerHTML = '<p>Incorrect <em>username</em> or <em>password</em></p><p>Try again</p>';
         document.querySelector('.signin').insertAdjacentElement('afterend' , errorDiv);
         errorDiv.classList.add('diverror');
-    }
+
+    };
 }
 

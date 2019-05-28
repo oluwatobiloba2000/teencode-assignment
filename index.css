@@ -45,9 +45,9 @@ footer{
     text-align: center;
 }
 .divsuccess{
-    background-color: rgb(12, 219, 5);
+    background-color: rgb(9, 255, 0);
     padding: .5rem;
-    width: 100%;
+    width: 90%;
     text-align: center;
     border-radius: 3px;
     color: white;
@@ -55,19 +55,12 @@ footer{
 }
 .diverror{
     margin: 5px;
-    background-color: rgb(221, 5, 5);
+    background-color: rgba(255, 0, 0, 0.931);
     padding: .5rem;
-    width: 100%;
+    width: 90%;
     height: 20%;
     font-size: 1rem;
     text-align: center;
     border-radius: 3px;
     color: white;
 }
-/* .note{
-    background-color: rgb(0, 211, 18);
-    padding: .2rem;
-    text-align: center;
-    border-radius: 3px;
-    color: rgb(0, 0, 0);
-} */
